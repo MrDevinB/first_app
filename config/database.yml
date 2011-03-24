@@ -16,7 +16,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: first_app_db
   pool: 5
-  timeout: 5000
+  username: first_app_user
+  password: first_app_pwd
+  host: mysql-1.fmondragon.com
